@@ -14,7 +14,7 @@ public class Strings {
     isPalindrome("Allo");
   }
 
-  protected void findSymbolOccurance(String word, char ch) {
+  private void findSymbolOccurance(String word, char ch) {
     int counter = 0;
     if (isCheck(word)) {
       return;
@@ -29,7 +29,7 @@ public class Strings {
         ch + "'" + " в слове " + word + " = " + counter);
   }
 
-  protected void findWordPosition(String source, String target) {
+  private void findWordPosition(String source, String target) {
     if (isCheck(source) || isCheck(target)) {
       return;
     }
@@ -43,14 +43,14 @@ public class Strings {
     }
   }
 
-  protected void stringReverse(String s) {
+  private void stringReverse(String s) {
     if (isCheck(s)) {
       return;
     }
     System.out.println(getReverse(s));
   }
 
-  protected void isPalindrome(String s) {
+  private void isPalindrome(String s) {
     if (isCheck(s)) {
       return;
     }
@@ -74,5 +74,4 @@ public class Strings {
   private static StringBuilder getReverse(String s) {
     return new StringBuilder(s).reverse();
   }
-
 }
