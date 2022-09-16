@@ -5,7 +5,7 @@ package com.company.strings;
  */
 public class Strings {
 
-  public void strStart(){
+  public void start() {
     findSymbolOccurance("null", 'l');
     findWordPosition("Apollo", "pollo");
     findWordPosition("Apple", "Plant");
@@ -13,6 +13,7 @@ public class Strings {
     isPalindrome("ERE");
     isPalindrome("Allo");
   }
+
   protected void findSymbolOccurance(String word, char ch) {
     int counter = 0;
     if (isCheck(word)) {
@@ -32,7 +33,7 @@ public class Strings {
     if (isCheck(source) || isCheck(target)) {
       return;
     }
-    int index = 0;
+    int index;
     if (source.contains(target)) {
       index = source.indexOf(target);
       System.out.println("Номер позиции (индекс) первого элемента подстроки "

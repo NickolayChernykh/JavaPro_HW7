@@ -1,17 +1,19 @@
 package com.company;
 
-import com.company.game.Game;
+import com.company.game.FieldOfDreams;
 import com.company.strings.Strings;
 
 public class Main {
 
   public static void main(String[] args) {
 
-    Game game = new Game();
+    FieldOfDreams game = new FieldOfDreams();
     Strings strings = new Strings();
 
+    strings.start();
     game.start();
-    strings.strStart();
+
+
   }
 }
 
